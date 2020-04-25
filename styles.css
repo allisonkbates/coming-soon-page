@@ -1,0 +1,121 @@
+/* General Styles & Variables */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+	--desaturated-red: hsl(0, 36%, 70%); /*font color as well*/
+	--soft-red: hsl(0, 93%, 68%); /*error styles*/
+	--dark-grayish-red: rgb(58, 62, 65);
+	--dark-grayish-red-opacity: rgb(58, 62, 65, .2);
+	--off-white: #FFFDFE;
+	--very-light-red: #FEFAF9;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: var(--desaturated-red);
+}
+
+/* Font Styles */
+
+h1 {
+	font-size: 2.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: .2em;
+	margin-bottom: 0;
+	line-height: 1.1;
+}
+
+.h1-light {
+	color: var(--desaturated-red);
+	font-weight: 300;
+}
+
+.h1-dark {
+	color: var(--dark-grayish-red);
+	font-weight: 400;
+	margin-top: 0;
+}
+
+p {
+	line-height: 1.6;
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: .9em;
+}
+
+/* Layout & Elements */
+
+header {
+	background-color: var(--off-white);
+	display: flex;
+	align-items: center;
+	padding: 0px 30px;
+	height: 84px;
+}
+
+.hero-image {
+	background: var(--desaturated-red) url("images/hero-mobile.jpg") no-repeat center center;
+	height: 250px;
+}
+
+.content {
+	background-color: var(--very-light-red);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 465px;
+	padding: 30px;
+	text-align: center;
+	margin: 0;
+}
+
+.hero-image img {
+	display: none;
+}
+
+form {
+	width: 100%;
+	margin: 30px;
+}
+
+input[type=email] {
+	height: 45px;
+	border-radius: 60px;
+	background-color: var(--very-light-red);
+	border: 1px solid var(--dark-grayish-red-opacity);
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+}
+
+input::placeholder {
+	color: var(--desaturated-red);
+	padding: 10px;
+}
+
+
+/* footer styles */
+footer {
+	background-color: var(--very-light-red);
+	margin: 0;
+}
+
+.attribution {
+	font-size: 11px; text-align: center;
+	background-color: var(--very-light-red);
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 992px) {
+	.hero-image {
+	}
+	p {
+		font-size: 1em;
+	}
+
+}

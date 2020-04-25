@@ -35,4 +35,5 @@ The designs were created to the following widths:
 - Weights: 300, 400, 600
 
 ### Allison's Notes
-- Testing 123
+-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
+

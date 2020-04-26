@@ -36,4 +36,4 @@ The designs were created to the following widths:
 
 ### Allison's Notes
 -https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
-
+- https://www.w3schools.com/js/js_validation_api.asp

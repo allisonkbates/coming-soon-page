@@ -48,7 +48,6 @@ p {
 	line-height: 1.6;
 	margin-top: 30px;
 	font-weight: 400;
-	font-size: 1em;
 }
 
 /* Layout & Elements */
@@ -62,7 +61,7 @@ header {
 }
 
 .hero-image {
-	background: var(--desaturated-red) url("images/hero-mobile.jpg") no-repeat center center;
+	background: url("images/hero-mobile.jpg") no-repeat center center;
 	height: 250px;
 }
 
@@ -136,25 +135,17 @@ footer {
 
 @media only screen and (min-width: 992px) {
 	body {
-		background: var(--very-light-red) url('./images/bg-pattern-desktop.svg') no-repeat center center;
-		display: grid;
-		grid-template-areas: "content hero-image";
-  		grid-template-rows: 1fr;
-  		grid-template-columns: 1fr 610px; 
-
+		background: url('./images/bg-pattern-desktop.svg') no-repeat center center;
 	}
 	header {
 		background: none;
-		grid-area: content;
 		padding: 60px 164px;
 	}
 	.content {
 		background: none;
-		grid-area: content;
 	}
 	.hero-image {
-		grid-area: hero-image;
-		background: var(--very-light-red) url('./images/hero-desktop.jpg') no-repeat center center;
+		background: url('./images/hero-desktop.jpg') no-repeat center center;
 		height: 800px;
 	}
 	footer {

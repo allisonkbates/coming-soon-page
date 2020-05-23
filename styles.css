@@ -85,11 +85,11 @@ header {
 
 form {
 	width: 100%;
-	margin: 35px 30px;
+	margin: 35px 30px 0px 30px;
 	display: flex;
 }
 
-input[type=email] {
+input {
 	height: 48px;
 	border-radius: 60px;
 	border: 1px solid var(--dark-grayish-red-opacity);
@@ -104,21 +104,60 @@ input::placeholder {
 	color: rgb(206, 151, 151, .5);
 }
 
+input:focus {
+	outline: none;
+	border: 2px solid var(--soft-red);
+}
+
 input[type=submit] {
 	display: none;
 }
 
+.label-one {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .svg {
 	border-radius: 24px;
-	/*add box shadow with gradient two*/
 	height: 48px;
 	width: 64px;
-	background-color: var(--gradient-one);
 	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-left: -65px;
+}
+
+.svg:hover {
+	background-image: linear-gradient(135deg,#FEFAF9, hsl(0, 80%, 86%));
+}
+
+.svg:focus {
+	outline: none;
+}
+
+.msg {
+	color: var(--soft-red);
+	margin: 0;
+	padding: 5px 0px 0px 20px;
+	font-size: 11px;
+	align-self: flex-start;
+}
+
+.error {
+	border: 2px solid var(--soft-red);
+}
+
+.error-icon {
+	display: none;
+}
+
+.show-error-icon {
+	transform: translateX(-300%);
+	display: block;
 }
 
 /* footer styles */
@@ -161,7 +200,7 @@ input[type=submit] {
 	}
 
 	form {
-		margin: 40px 0px;
+		margin: 40px 0px 0px 0px;
 	}
 
 	h1 {
@@ -170,5 +209,9 @@ input[type=submit] {
 
 	p {
 		font-size: 16px;
+	}
+
+	.svg {
+		width: 95px;
 	}
 }

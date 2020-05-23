@@ -41,4 +41,4 @@ The designs were created to the following widths:
 
 ### To Dos
 - Box shadow on submit button
-- light gradient on the background on mobile
+

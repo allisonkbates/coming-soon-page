@@ -129,6 +129,7 @@ input[type=submit] {
 	justify-content: center;
 	align-items: center;
 	margin-left: -65px;
+	box-shadow: 0px 15px 20px 3px rgba(249,98,98,0.15);
 }
 
 .svg:hover {

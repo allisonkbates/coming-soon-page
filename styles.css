@@ -8,8 +8,6 @@
 	--dark-grayish-red-opacity: rgb(58, 62, 65, .2);
 	--off-white: #FFFDFE;
 	--very-light-red: #FEFAF9;
-	--gradient-one: #F3B6B8;
-	--gradient-two: #EF9696;
 }
 
 body {
@@ -18,7 +16,7 @@ body {
 	font-size: 16px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: var(--desaturated-red);
-	background-color: var(--very-light-red);
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 }
@@ -48,6 +46,7 @@ p {
 	line-height: 1.6;
 	margin-top: 30px;
 	font-weight: 400;
+	font-size: 14px;
 }
 
 /* Layout & Elements */
@@ -61,17 +60,16 @@ header {
 }
 
 .hero-image {
-	background: url("images/hero-mobile.jpg") no-repeat center center;
+	background: url("images/hero-mobile.jpg") center/cover no-repeat;
 	height: 250px;
 }
 
 .content {
-	background-color: var(--very-light-red);
 	display: flex;
 	flex-direction: column;
+	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 	align-items: center;
-	height: 465px;
-	padding: 65px 30px 30px 30px;
+	padding: 30px 30px 30px 30px;
 	text-align: center;
 	margin: 0;
 	box-sizing: border-box;
@@ -90,12 +88,12 @@ form {
 input[type=email] {
 	height: 48px;
 	border-radius: 60px;
-	background-color: var(--very-light-red);
 	border: 1px solid var(--dark-grayish-red-opacity);
 	width: 310px;
 	margin: 0px;
 	padding: 10px 20px;
 	box-sizing: border-box;
+	background: transparent;
 }
 
 input::placeholder {
@@ -106,14 +104,13 @@ input[type=submit] {
 	display: none;
 }
 
-
 .svg {
 	border-radius: 24px;
-	/*add box shadow with gradient two*/)
+	/*add box shadow with gradient two*/
 	height: 48px;
 	width: 64px;
 	background-color: var(--gradient-one);
-	background-image: linear-gradient(to bottom right, var(--gradient-one), var(--gradient-two));
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -121,35 +118,27 @@ input[type=submit] {
 }
 
 /* footer styles */
-footer {
-	margin: 0;
-}
-
 .attribution {
 	font-size: 11px; text-align: center;
-	background-color: var(--very-light-red);
 }
 .attribution a { 
 	color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	body {
-		background: url('./images/bg-pattern-desktop.svg') no-repeat center center;
+		background: url('./images/bg-pattern-desktop.svg') no-repeat center/cover;
 	}
 	header {
-		background: none;
 		padding: 60px 164px;
 	}
 	.content {
-		background: none;
+		
 	}
 	.hero-image {
-		background: url('./images/hero-desktop.jpg') no-repeat center center;
+		background: url('./images/hero-desktop.jpg') no-repeat center/cover;
 		height: 800px;
+		width: 50%;
+		align-self: flex-end;
 	}
-	footer {
-		grid-area: content;
-	}
-
 }

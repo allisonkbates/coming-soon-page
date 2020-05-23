@@ -64,6 +64,10 @@ header {
 	height: 250px;
 }
 
+.desktop-logo {
+	display: none;
+}
+
 .content {
 	display: flex;
 	flex-direction: column;
@@ -89,7 +93,7 @@ input[type=email] {
 	height: 48px;
 	border-radius: 60px;
 	border: 1px solid var(--dark-grayish-red-opacity);
-	width: 310px;
+	width: 100%;
 	margin: 0px;
 	padding: 10px 20px;
 	box-sizing: border-box;
@@ -127,18 +131,44 @@ input[type=submit] {
 
 @media only screen and (min-width: 768px) {
 	body {
-		background: url('./images/bg-pattern-desktop.svg') no-repeat center/cover;
+		flex-direction: row-reverse;
 	}
+
 	header {
-		padding: 60px 164px;
+		display: none;
 	}
+
 	.content {
-		
+		background: url('./images/bg-pattern-desktop.svg') no-repeat center/cover;
+		padding: 60px 240px 60px 160px;
+		align-items: start;
+		text-align: left;
 	}
+
+	.desktop-logo {
+		display: block;
+	}
+
 	.hero-image {
 		background: url('./images/hero-desktop.jpg') no-repeat center/cover;
 		height: 800px;
-		width: 50%;
+		width: 100%;
 		align-self: flex-end;
+	}
+
+	.h1-light {
+		margin-top: 130px;
+	}
+
+	form {
+		margin: 40px 0px;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	p {
+		font-size: 16px;
 	}
 }

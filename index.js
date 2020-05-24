@@ -1,5 +1,4 @@
 function showError(event) {
-  console.log(email.validity);
   if (email.validity.valueMissing) {
     msg.textContent = 'Please enter an email address.'
     email.classList.add('error');
@@ -11,7 +10,7 @@ function showError(event) {
   } else {
     msg.textContent = '';
     email.classList.remove('error');
-    error.classList.remove('show-error-con');
+    error.classList.remove('show-error-icon');
 
   }
   event.preventDefault();

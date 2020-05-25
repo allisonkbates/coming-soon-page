@@ -170,7 +170,7 @@ input[type=submit] {
 	color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
 	body {
 		flex-direction: row-reverse;
 	}
@@ -181,7 +181,7 @@ input[type=submit] {
 
 	.content {
 		background: url('./images/bg-pattern-desktop.svg') no-repeat center/cover;
-		padding: 60px 240px 60px 160px;
+		padding: 60px 15% 60px 160px;
 		align-items: start;
 		text-align: left;
 	}

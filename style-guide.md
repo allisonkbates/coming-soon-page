@@ -34,11 +34,4 @@ The designs were created to the following widths:
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weights: 300, 400, 600
 
-### Allison's Notes
--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
-- https://www.w3schools.com/js/js_validation_api.asp
-
-
-### To Dos
-- Box shadow on submit button
 
